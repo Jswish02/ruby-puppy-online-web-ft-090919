@@ -3,17 +3,13 @@ class Dog
    @@all = []
   def initialize(name)
     @name = name 
-  
+  save
+end 
+def self.all 
+  @@all
+end
+def self.print_all
+  puts @@all.map {|dog| dog.name}
   @@all << self
-  @@print_all
-end
-  def print_all
-    .print_all(Dog.name.all)
-end
-  def  it_self
-    self.all 
-  end
-  def clear_all
-  @@all.clear
-end
+
 end
